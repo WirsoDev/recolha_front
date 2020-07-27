@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/create-rec.css">
+    <link rel="stylesheet" href="static/responsive.css">
+
+
+    <title>criar ponto de recolha</title>
+</head>
+<body>
+
+
+    <div id="page-create-point">
+
+
+            <header>
+                <img src="static/src/logo_recolha.svg" alt="logo-ecoleta">
+                <a href="index.html">
+                <span class="seta-esquerda"></span>
+                Voltar para home</a>
+            </header>
+
+            <form action="">
+
+                <h1>Resgisto de ponto de recolha</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados da empresa</h2>
+                    </legend>
+                    <div class="field">
+                        <label for="name">Nome da empresa</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address2">Endereço</label>
+                            <input type="text" name="adress2" required>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address2">Endereço 2</label>
+                            <input type="text" name="adress2" required>
+                        </div>
+                        <div class="field">
+                            <label for="numero">Numero</label>
+                            <input type="number" name="number" required>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="state">Distrito</label>
+                            <select name="uf" required>
+                                <option value="">Escolhe o distrito</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled required>
+                                <option value="">Escolhe a cidade</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        <h2>Itens de recolha</h2>
+                    </legend>
+
+                        <div class="items-grid">
+                            <li data-id="1">
+                                <img src="static/src/lampadas.svg" alt="lampadas">
+                                <span>Lampadas</span>
+                            </li>
+
+                            <li data-id="2">
+                                <img src="static/src/baterias.svg" alt="Pilhas e Baterias">
+                                <span>Pilhas e Baterias</span>
+                            </li>
+
+                            <li data-id="3">
+                        <img src="static/src/papeis-papelao.svg" alt="Papeis e papelão">
+                                <span>Papeis e papelão</span>
+                            </li>
+
+                            <li data-id="4">
+                                <img src="static/src/eletronicos.svg" alt="Residuos Electronicos">
+                                <span>Residuos Electronicos</span>
+                            </li>
+
+                            <li data-id="5">
+                                <img src="static/src/organicos.svg" alt="Residuos Organicos">
+                                <span>Residuos Organicos</span>
+                            </li>
+
+                             <li data-id="6">
+                                <img src="static/src/oleo.svg" alt="Oleo de Cozinha">
+                                <span>Oleo de Cozinha</span>
+                            </li>
+                        </div>
+
+                        <input type="hidden" name="items">
+
+                </fieldset>
+
+
+
+
+                <button type="submit">
+                    Registar ponto de recolha</button>
+            </form>
+
+    </div>
+    <script src="/scripts/create-rec.js"></script>
+
+</body>
+</html>

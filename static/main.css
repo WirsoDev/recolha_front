@@ -1,0 +1,35 @@
+:root {
+    --title-color: #0D415D;
+    --primary-color: #A6D406;
+    --sec-color: #7D9F21;
+    --tre-color: #a7d40686;
+    --blue-color: #0D415D;
+    --blue-two: #1D5B79;
+}
+
+h1, h2 {
+    color: var(--title-color);
+}
+
+p {
+    color: var(--blue-two);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}

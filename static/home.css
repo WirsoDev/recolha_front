@@ -1,0 +1,97 @@
+#page-home {
+    background: url('../static/src/home-background_02.svg') no-repeat;
+    height: 100vh;
+    background-position: 35vw bottom;
+}
+
+.containter {
+    width: 90%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+header a span {
+    margin-right: 15px;
+    background-image: url(../static/src/log-in.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+main {
+    max-width: 560px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1 {
+    font-size: 50px;
+    color: var(--title-color);
+}
+
+main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+main a {
+    width: 100%;
+    max-width: 360px;
+    background-color: var(--primary-color);
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: 400ms;
+    font-weight: bold;
+    color: white;
+}
+
+main a:hover {
+    background-color: var(--sec-color);
+}
+
+main a span {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0,0,0,0.08);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main a span::after {
+    content: "";
+    background-image: url('../static/src/search.svg');
+    width: 20px;
+    height: 20px;
+
+}
+
+main a strong {
+    flex: 1;
+    text-align: center;
+}
